@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='css/amc.css'>
+  <link rel='stylesheet' href='css/style.css'>
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+</head>
+<body>
+  <header class="header-1 flex p-2 p-lg-3 px-lg-4 px-xl-8">
+    <a href="index.html">
+      <img src="images/logo.svg" alt="Logo Shortly">
+    </a> <!-- LOGO -->
+    <button class="menu-btn">
+      <img src="images/icon-hamburger.svg" alt="Menu Logo">
+      <img src="images/icon-close.svg" alt="Close Icon" class="none">
+    </button> <!-- BOTON MENU -->
+    <nav class="menu p-1 py-1-5">
+      <a class="text-white-1 py-0-5" href="#">Features</a>
+      <a class="text-white-1 py-0-5" href="#">Pricing</a>
+      <a class="text-white-1 py-0-5" href="#">Resources</a>
+      <hr class="my-1 opacity-1">
+      <a class="text-white-1 py-0-5" href="#">Login</a>
+      <a class="text-white-1 my-1 py-0-5" href="#">Sign Up</a>
+    </nav> <!-- MENU NAV -->
+  </header> <!-- HEADER -->
+  <section class="hero-section flex column-r row-lg">
+    <header class="text-center mt-2 mt-lg-0 text-lg-start">
+      <div class="container">
+        <h1 class="lh-2">More than just shorter links</h1>
+        <p class="mt-1 opacity-7">Build your brand’s recognition and get detailed insights 
+        on how your links are performing.</p>
+        <a href="#" class="btn mt-2">Get Started</a>
+      </div>
+    </header> <!-- HEADER HERO -->
+    <img  src="images/illustration-working.svg" alt="Hero Imagen">
+  </section> <!-- HERO -->
+  <div class="container mt-4">
+    <form id="form-short" class="shorten-form flex column p-1 row-md p-md-2-5">
+      <label for="link" class="none"></label>
+      <input pattern="^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$" type="text" name="link" id="link" class="p-0-5" placeholder="Shorten a link here..." title="Example: google.com" required autocomplete="off">
+      <input type="submit" value="Shorten It!" class="btn mt-1 fw-bold mt-md-0 ml-md-1-5">
+    </form>
+    <div class="loader none"></div>
+  </div> <!-- SHORTER LINK -->
+  <div class="links mt-1">
+    <div class="container">
+
+    </div>
+  </div> <!-- ENLACES RESULTADO -->
+  <section class="advanced-section container mt-2 text-center">
+    <h2>Advanced Statistics</h2>
+    <p class="mt-1 opacity-7">Track how your links are performing across the web with our 
+      advanced statistics dashboard.</p>
+    <div class="features mt-5 flex-lg text-lg-start">
+      <section class="feature flex column bg-white-1 pb-2 px-2">
+        <h3>Brand Recognition</h3>
+        <p class="mt-1 opacity-5">Boost your brand recognition with each click. Generic links don’t 
+          mean a thing. Branded links help instil confidence in your content.</p>
+        <div class="image p-1-5">
+          <img src="images/icon-brand-recognition.svg" alt="Brand">
+        </div>
+      </section> <!-- CARD FEATURE -->
+      <section class="feature flex column bg-white-1 pb-2 px-2 mt-6 mt-lg-0 ml-lg-3">
+        <h3>Detailed Records</h3>
+        <p class="mt-1 opacity-5">Gain insights into who is clicking your links. Knowing when and where 
+          people engage with your content helps inform better decisions.</p>
+        <div class="image p-1-5">
+          <img src="images/icon-detailed-records.svg" alt="Detail">
+        </div>
+      </section> <!-- CARD FEATURE -->
+      <section class="feature flex column bg-white-1 pb-2 px-2 mt-6 mt-lg-0 ml-lg-3">
+        <h3>Fully Customizable</h3>
+        <p class="mt-1 opacity-5">Improve brand awareness and content discoverability through customizable 
+          links, supercharging audience engagement.</p>
+        <div class="image p-1-5">
+          <img src="images/icon-fully-customizable.svg" alt="Fully">
+        </div>
+      </section> <!-- CARD FEATURE -->
+    </div> <!-- FEATURES -->
+  </section> <!-- ADVANCED SECTION -->
+  <section class="boost text-center text-white-1 mt-4 py-4-5 flex py-md-1-5">
+    <div class="container">
+      <h3>Boost your links today</h3>
+      <a href="#" class="btn mt-1">Get Started</a>
+    </div>
+  </section> <!-- BOOST SECTION -->
+  <footer class="py-3">
+    <div class="container text-center text-lg-start">
+      <a href="#"><img src="images/logo-copy.svg" alt="Logo"></a>
+      <div class="navs mt-3 flex-md mt-lg-0">
+        <section class="nav text-white-1">
+          <h5>Features</h5>
+          <nav class="nav-footer flex column mt-1">
+            <a href="#">Link Shortering</a>
+            <a href="#">Branded Links</a>
+            <a href="#">Analytics</a>
+          </nav>
+        </section> <!-- NAV -->
+        <section class="nav text-white-1 mt-3 mt-md-0">
+          <h5>Resources</h5>
+          <nav class="nav-footer flex column mt-1">
+            <a href="#">Blog</a>
+            <a href="#">Developers</a>
+            <a href="#">Support</a>
+          </nav>
+        </section> <!-- NAV -->
+        <section class="nav text-white-1 mt-3 mt-md-0">
+          <h5>Company</h5>
+          <nav class="nav-footer flex column mt-1">
+            <a href="#">About</a>
+            <a href="#">Our Team</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact</a>
+          </nav>
+        </section> <!-- NAV -->
+      </div> <!-- NAVS -->
+      <div class="sociales-footer w-50 mx-auto mt-2 flex mt-lg-0">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer> <!-- FOOTER -->
+  <div class="attribution py-1 text-center text-white-1 bg-black-1">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
+    Coded by <a href="#">Richard Crespo</a>.
+  </div>
+  <script src="js/clipboard.min.js"></script>
+  <script src="js/script.js" type="module"></script>
+</body>
+</html>
